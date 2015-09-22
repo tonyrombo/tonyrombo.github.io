@@ -1,0 +1,655 @@
+@font-face {
+    font-family: 'jubilatbolditalic';
+    src: url('../fonts/jubilat-bolditalic-webfont.eot');
+    src: url('../fonts/jubilat-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jubilat-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/jubilat-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/jubilat-bolditalic-webfont.svg#jubilatbolditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	font-family: 'Helvetica Neue' , Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+/*HEADER*/
+.header{
+	background-color: #459CE4;
+    padding: 2.82em 8.125em;
+    -webkit-box-shadow: 0 4px 0 0 rgba(42,74,103,0.57);
+    box-shadow: 0 4px 0 0 rgba(42,74,103,0.57);
+    -moz-box-shadow: 0 4px 0 0 rgba(42,74,103,0.57);
+    margin-bottom: 4px;
+}
+
+.clearfix:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+h1{
+	font-family: 'Helvetica Neue';
+	font-weight: 100;
+	color: rgba(255,255,255,0.4);
+	margin: 0;
+	font-size: 1.1em;
+    float: left;
+}
+
+h1 span{
+    font-family: "jubilatbolditalic", serif;
+    color: #fff;
+    font-size: 1.875em;
+    text-shadow:2px 2px 0 rgba(38, 93, 142, 0.5);
+    margin-right: 1rem;
+}
+
+.nav{
+    float: right;
+    padding: 0;
+}
+
+.nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.nav li:first-child{
+    padding-left: 0;
+}
+
+.nav li:last-child{
+    padding-right: 0;
+}
+
+.nav li a{
+    color: #fff;
+    text-shadow:2px 2px 0 rgba(38, 93, 142, 0.5);
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-size: .9rem
+
+}
+
+.nav li ul li{
+    display: block;
+    padding: 0;
+    margin-bottom: .5rem
+}
+
+.nav li ul li:last-child{
+    margin-bottom: 0;
+}
+
+.nav li:hover ul{
+    display: block;
+}
+
+.nav > li:hover > a{
+    font-weight: bold;
+}
+
+.nav li ul{
+    position: absolute;
+    display: none;
+    top: 1.4rem;
+    padding: 1.25rem 1.5rem;
+    background: #58a6e7;
+    width: 4.5rem;
+    -webkit-box-shadow: 0 4px 0 0 rgba(42,74,103,0.57);
+    box-shadow: 0 4px 0 0 rgba(42,74,103,0.57);
+    -moz-box-shadow: 0 4px 0 0 rgba(42,74,103,0.57);
+}
+
+.nav li.subnav > a{
+    background: url(../images/sub_menu_arrow.png) no-repeat right center;
+    padding-right: 1rem;
+}
+
+.nav li ul li a{
+    font-size: 0.81em;
+    font-weight: bold;
+}
+
+.nav li ul li a:hover{
+    color: #33699c;
+}
+
+.intro{
+    float: left;
+}
+
+.intro h2{
+    font-weight: 100;
+    font-size: 2.25rem;
+}
+
+.cta{
+    text-decoration: none;
+    font-size: 1.56rem;
+    color: #fff;
+    background: url(../images/arrow-link.png) no-repeat right center;
+    padding-right: 1.5rem;
+    line-height: 2.18rem;
+    float: left;
+    font-weight: 100;
+}
+/*Content*/
+
+.video img{
+    width: 100%;
+}
+
+.video{
+    position: relative;
+}
+
+.title + div, .title + ul{
+    display: none;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.play-video{
+    background: url(../images/play-btn.png) no-repeat left top;
+    display: block;
+    width:7.38rem;
+    height:7.38rem;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -3.69rem;
+    margin-left: -3.69rem;
+    z-index: 200000;
+}
+.title{
+    background: #76818f;
+    padding: 1rem 8.125rem;
+    overflow: hidden;
+    -webkit-box-shadow: 0 4px 0 0 rgba(42,74,103,0.57);
+    box-shadow: 0 4px 0 0 rgba(42,74,103,0.57);
+    -moz-box-shadow: 0 4px 0 0 rgba(42,74,103,0.57);
+    margin-bottom: 4px;
+}
+
+.title h2{
+    margin: 0;
+    color: #b4bfcd;
+    font-weight: 100;
+    float: left;
+    line-height: 5rem;
+}
+
+.title h2 span{
+    color: #f2f2f2;
+}
+
+.title a{
+    float: right;
+    display: block;
+    text-indent: -9999px;
+    width: 77px;
+    height: 77px;
+    border-radius: 50px;
+}
+
+.latestWorks .title a{
+    border:3px solid #b4bfcd;
+}
+
+/*About Us*/
+.aboutUs{
+    background-color: #454c54;
+}
+
+.about-content{
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 85%;
+}
+
+.about-title{
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: left;
+    width: 85%;
+}
+
+.column{
+    color: rgba(255,255,255,0.5);
+    float: left;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 32px;
+    margin: 45px 1%;
+    width: 35%;
+}
+
+.aboutUs .title a{
+    border:3px solid #434a54;
+}
+
+/*SERVICES*/
+
+.services{
+    background-color: #449ce3;
+}
+
+.services-list{
+    margin: 70px auto 0;
+    overflow: hidden;
+    width: 85%;
+}
+
+.services-item{
+    float: left;
+    list-style: none;
+    margin: 5px 2% 70px;
+    text-align: center;
+    width: 20%;
+}
+
+.services-item img{
+    height: auto;
+    max-width: 100%;
+}
+
+.services-item h3{
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.services-item p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 24px;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.services .title a{
+    border:3px solid #429edf;
+}
+
+/*PRICE*/
+
+.price{
+    background-color: #454c54;
+}
+
+.price-content{
+    padding: 70px 0;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.price-list{
+    overflow: hidden;
+    padding: 0 1%;
+    max-width: 100%;
+}
+
+.price-item{
+    background-color: #595d66;
+    float: left;
+    list-style: none;
+    margin: 30px 1%;
+    padding-bottom: 48px;
+    padding-bottom: 3rem;
+    text-align: center;
+    width: 30%;
+}
+
+.price-item h3{
+    background-color: #f2f2f2;
+    color: rgba(69, 76, 84, 0.9);
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 100;
+    height: 200px;
+    line-height: 5rem;
+    margin: 0;
+    padding-top: 5%; 
+    width: 100%;
+}
+
+.price-item h3>span{
+    font-size: 80px;
+    font-size: 5rem;
+}
+
+.price-item h3>span>sub{
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+.price-item>ul{
+    margin: 30px 5%;
+    padding: 2rem 0;
+    text-align: center;
+    width: 90%
+}
+
+.price-item>ul>li{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 3rem;
+    list-style: none;
+}
+
+.price-info{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+}
+
+.signUp{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block;
+    background: url(../images/arrow-link.png) no-repeat right center;
+    margin: 2rem auto;
+    padding-right: 1.5rem;
+    line-height: 2.18rem;
+    font-weight: 100;
+}
+
+.price .title a{
+    border:3px solid #474b54;
+}
+
+/*TEAM*/
+
+.team{
+    background-color: #63d156;
+}
+
+.team-list{
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 3rem 1%;
+    max-width: 85%;
+}
+
+.team-item{
+    float: left;
+    list-style: none;
+    margin: 2rem 1%;
+    max-width: 30%;
+}
+
+.team-item img{
+    max-width: 100%;
+    height: auto;
+}
+
+.team-item h3{
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 200;
+    float: left;
+    margin: 10px 0;
+    width: 50%;
+}
+
+.social-list{
+    float: right;
+    margin-top: 10px;
+    width: 30%;
+}
+
+.social-list li{
+    float: left;
+    list-style: none;
+    width: 30%
+}
+
+.social-list li .team-fb-icon{
+    background: url(../images/facebook-team.png) no-repeat center center;
+    color: transparent;
+    width: 100%;
+}
+
+.social-list li .team-tw-icon{
+    background: url(../images/twitter-team.png) no-repeat center center;
+    color: transparent;
+    width: 100%;
+}
+
+.social-list li .team-pint-icon{
+    background: url(../images/pinterest-team.png) no-repeat center center;
+    color: transparent;
+    width: 100%;
+}
+
+.team-item span{
+    color: rgba(255, 255, 255, 0.7);
+    float: left;
+    font-weight: 100;
+    width: 100%;
+}
+
+.team-item p{
+    color: rgba(255, 255, 255, 0.7);
+    float: left;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+    width: 100%;
+}
+
+.team .title a{
+    border:3px solid #5fd656;
+}
+
+/*CONTACT*/
+
+.contact{
+    background-image: url(../images/map.png);
+    background-size: cover;
+}
+
+.contact-content{
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 3rem 0;
+    width: 85%;
+}
+
+.contact-info{
+    float: left;
+    width: 40%;
+}
+
+.contact-info p{
+    float: left;
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.contact-info address{
+    float: left;
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 1rem 0;
+    width: 50%;
+}
+
+.contact-social-list{
+    width: 100%;
+}
+
+.contact-social-item{
+    float: left;
+    list-style: none;
+    margin: 1%;
+    width: 10%;
+}
+
+.contact-social-item img{
+    height: auto;
+    max-width: 100%;
+}
+
+.contact-social-item a{
+    color: transparent;
+}
+
+.contact-form{
+    box-sizing: border-box;
+    float: left;
+    margin: 10px 1%;
+    overflow: hidden;
+}
+
+.contact-form button{
+    border: none;
+    margin-top:  30px;
+}
+
+.form-item{
+    background-color: rgba(255,255,255,0.2);
+    border: none;
+    border-radius: 3%;
+    color: #f2f2f2;
+    display: inline-block;
+    float: left;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 15px 1%;
+    padding: 10px 2%;
+    width: 40%;
+}
+
+::-webkit-input-placeholder {
+   color: #f2f2f2;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #f2f2f2;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #f2f2f2;  
+}
+
+:-ms-input-placeholder {  
+   color: #f2f2f2;  
+}
+
+.contact .title a{
+    border:3px solid #429ae4;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #454c54;
+    overflow: hidden;
+    width: 100%;
+}
+
+.twitter-feed{
+    text-align: center;
+    padding: 60px 0;
+}
+
+.twitter-feed img{
+    margin: 30px 0;
+    height: auto;
+    max-width: 100%;
+}
+
+.twitter-feed p{
+    color: #f2f2f2;
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.twitter-feed span{
+    color: rgba(255,255,255,0.5);
+    font-size: 14px;
+    font-size: 0.88rem;
+    font-size: 14px;
+    font-weight: 100;
+    margin: 10px auto;
+    width: 25%;
+}
+
+.footer-bottom{
+    background-color: #1c2023;
+    overflow: hidden;
+    padding: 20px 2%;
+}
+
+.footer-bottom p{
+    color: rgba(255,255,255,0.3);
+    float: left;
+    font-size: 1rem;
+    font-size: 16px;
+    font-weight: 200;
+    vertical-align: middle;
+}
+
+.footer-bottom nav{
+    float: right;
+    margin: 12px 5% 0 0;
+    vertical-align: middle;
+}
+
+.footer-bottom nav a{
+    color: rgba(255,255,255,0.3);
+    display: inline-block;
+    font-size: 1rem;
+    font-size: 16px;
+    font-weight: 200;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*----------------------------------------*/
+a.expand{
+    background: url(../images/expand-btn.png)no-repeat left top;
+}
+
+a.contract{
+    background: url(../images/contract-btn.png)no-repeat left top;
+}

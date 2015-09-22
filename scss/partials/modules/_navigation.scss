@@ -1,0 +1,120 @@
+nav{
+	background-color: rgba(0,0,0,0.5);
+	float: left;
+	height: 150px;
+	overflow: hidden;
+	position: fixed;
+	-moz-position: fixed;
+	width: 100%;
+	display: inline-block;
+
+	-webkit-transition: height 1s ease-in-out;
+    -moz-transition: height 1s ease-in-out;
+    -ms-transition: height 1s ease-in-out;
+    -o-transition: height 1s ease-in-out;
+    transition: height 1s ease-in-out;
+}
+
+.logo{
+	float: left;
+	margin: 15px 2%;
+
+	-webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -ms-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+
+.navbar{
+	float: right;
+	margin: 50px 1%;
+	text-align: center;
+	width: 50%;
+}
+
+.navbar-item{
+	float: left;
+	list-style: none;
+	margin: 0 1%;
+	padding-bottom: 5px;
+	text-align: center;
+	width: 18%;
+
+	a{
+		border: none;
+		color: $font-main-color;
+		@include font-size(16);
+		font-family: "Roboto";
+		font-weight: lighter;
+		text-decoration: none;
+		text-transform: capitalize;
+	}
+
+	&:hover{
+		border-bottom: 2px solid #f2f2f2;
+
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-ms-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+	}
+}
+
+
+
+
+nav.small{
+	background-color: rgba(0,0,0,0.5);
+	float: left;
+	height: 75px;
+	overflow: hidden;
+	position: fixed;
+	-moz-position: fixed;
+	width: 100%;
+	display: inline-block;
+
+    .logo{
+	float: left;
+	height: 50px;
+	margin: 15px 2%;
+	width: 125px;
+	}
+
+	.navbar{
+		float: right;
+		margin: 30px 1%;
+		text-align: center;
+		width: 50%;
+	}
+
+	.navbar-item{
+		float: left;
+		list-style: none;
+		margin: 0 2%;
+		padding-bottom: 5px;
+		text-align: center;
+		width: 15%;
+
+		a{
+			border: none;
+			color: $font-main-color;
+			@include font-size(14);
+			font-family: "Roboto";
+			font-weight: lighter;
+			text-decoration: none;
+			text-transform: capitalize;
+		}
+
+		&:hover{
+			border-bottom: 2px solid #f2f2f2;
+
+			-webkit-transition: all 1s ease-in-out;
+			-moz-transition: all 1s ease-in-out;
+			-ms-transition: all 1s ease-in-out;
+			-o-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;
+		}
+	}
+}

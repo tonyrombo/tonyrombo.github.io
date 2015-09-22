@@ -1,0 +1,15 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext");
+
+@import "partials/_variables.scss";
+@import "partials/_mixins.scss";
+@import "partials/_base.scss";
+
+
+@import "partials/modules/_navigation.scss";
+@import "partials/modules/_header.scss";
+@import "partials/modules/_myWork.scss";
+@import "partials/modules/_aboutMe.scss";
+@import "partials/modules/_skills.scss";
+@import "partials/modules/_motivation.scss";
+@import "partials/modules/_contact.scss";
+@import "partials/modules/_footer.scss";

@@ -1,0 +1,68 @@
+footer{
+	@include positioning;
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px 0;
+}
+
+.contact-info{
+	@include font-size(18);
+	float: left;
+	height: 150px;
+	margin: 30px;
+
+	p{
+		color: $font-main-color;
+		line-height: 32px;
+		width: 100%;
+	}
+}
+
+.social{
+	float: right;
+	height: 120px;
+	margin: 30px;
+	overflow: hidden;
+	width: 30%
+}
+
+.social-item{
+	float: left;
+	list-style: none;
+	margin: 10px 10% 0 0%;
+}
+
+.pinterest-icon path{
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+    &:hover{
+    	fill: #cb2027;
+    }
+}
+
+.github-icon path{
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+    &:hover{
+    	fill: #333;
+    }
+}
+
+.linkedin-icon path{
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
+    &:hover{
+    	fill: #0077B5;
+    }
+}

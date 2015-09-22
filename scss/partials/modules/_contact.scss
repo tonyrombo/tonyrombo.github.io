@@ -1,0 +1,56 @@
+.contact{
+	background-color: $section-color-2;
+}
+
+.contact-form{
+	margin: 100px auto;
+	width: 50%;
+	text-align: center;
+}
+
+.form-item{
+	background-color: rgba(255,255,255,0.5);
+	border: none;
+	color: rgba(0,0,0,0.5);
+	@include font-size(18);
+	height: 32px;
+	margin: 25px 2%;
+	padding: 10px 1%;
+	width: 100%;
+}
+
+.submit-btn{
+	background-color: rgba(0,0,0,0.5);
+	border: none;
+	color: $font-main-color;
+	@include font-size(18);
+	display: inline-block;
+	margin: 10px 5%;
+	padding: 15px 1%;
+	width: 25%;
+
+	&:hover{
+		background-color: rgba(255,255,255,0.5);
+		color: rgba(0,0,0,0.7);
+	}
+}
+
+.message-item{
+	height: 150px;
+}
+
+::-webkit-input-placeholder {
+	color: rgba(0,0,0,0.5);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: rgba(0,0,0,0.5);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: rgba(0,0,0,0.5);  
+}
+
+:-ms-input-placeholder {  
+	color: rgba(0,0,0,0.5);  
+}

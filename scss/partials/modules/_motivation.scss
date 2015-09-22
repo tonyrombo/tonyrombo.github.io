@@ -1,0 +1,8 @@
+.motivation-quote{
+	background-color: $section-color-1;
+}
+
+.quote{
+	@include font-size(24);
+	@include paragraph;
+} 

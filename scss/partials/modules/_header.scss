@@ -1,0 +1,25 @@
+header{
+	background-image: url(../img/frailes.jpg);
+	background-size: cover;
+	float: left;
+	height: 100%;
+	padding-top: 150px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.main-title{
+	@include font-size(48);
+	color: $font-main-color;
+	float: left;
+	font-weight: 200;
+	margin: 10% 5% 0 10%;
+	text-shadow: 2px 2px 20px #f2f2f2, 2px 2px 20px #F2F2F2;
+	width: 35%;
+}
+
+.profile-photo{
+	border: 1px solid #f2f2f2;
+	margin: 100px 0 100px 15%;
+	width: 25%;
+}

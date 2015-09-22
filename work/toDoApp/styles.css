@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Raleway";
+	background-color: #5197A4;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.logo{
+	float: left;
+	font-family: "Dancing Script";
+	font-size: 48px;
+	font-weight: 400;
+	margin: 10px 20px;
+}
+
+.navbar{
+	float: left;
+	width: 60%;
+	margin: 18px 50px;
+}
+
+.navbar-item{
+	float: right;
+	list-style: none;
+	margin: 10px 2%;
+	padding: 5px;
+}
+
+.navbar-item a{
+	text-decoration: none;
+	color: #000;
+}
+
+/*-----Styles del Content------*/
+
+.mainContainer{
+	margin: 0 auto;
+	width: 80%;
+}
+
+.newToDo-container{
+	margin: 20px auto;
+	text-align: center;
+	width: 100%;
+}
+.newToDo-title{
+	display: inline-block;
+	font-size: 24px;
+}
+
+.newToDo{
+	border: none;
+	font-size: 18px;
+	height: 24px;
+	margin: 10px 15px;
+	width: 250px;
+}
+
+.btn{
+	background-color: #f2f2f2;
+	border: none;
+	font-size: 18px;
+	height: 24px;
+	text-align: center;
+	width: 100px;
+}
+
+.displayList{
+	float: left;
+	margin: 0 2%;
+	background-color: rgba(0,0,0,0.1);
+	padding: 30px 1%;
+	text-align: center;
+	width: 60%;
+}
+
+.get-tasks{
+	float: left;
+	margin: 0 1%;
+	background-color:rgba(0,0,0,0.1);
+	padding: 30px 1%;
+	text-align: center;
+	width: 25%;
+}
+
+.toDoList{
+	padding: 15px;
+}
+
+.ToDo{
+	background-color: rgba(0,0,0,0.2);
+	padding: 10px 1%;
+	margin: 15px 1%;
+	text-align: left;
+	list-style: none;
+	width: 100%;
+}
+
+.check{
+	background-color: #f2f2f2;
+	border: none;
+	width: 2%;
+}
+
+.item-text{
+	float: left;
+	font-size: 18px;
+	width: 70%
+}
+
+.removeToDo{
+	background-color: rgba(245, 39, 39, 0.5);
+	border: none;
+	float: right;
+	font-size: 14px;
+	color: rgb(0,0,0);
+	width: 7.5%;
+}
+
+.task-item{
+	list-style: none;
+	margin: 10px 0;
+}
+
+.task{
+	float: left;
+    padding: 5px 1%;
+    width: 100%;
+    margin: 5px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

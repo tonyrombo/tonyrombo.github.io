@@ -1,0 +1,88 @@
+.skills{
+	background-color: $section-color-2;
+
+	&:hover{
+
+		.hidden-item{
+			-webkit-transition: height 1s linear;
+			-moz-transition: height 1s linear;
+			-ms-transition: height 1s linear;
+			-o-transition: height 1s linear;
+			transition: height 1s linear;
+		}
+
+		.html{
+			height: 70%;
+		}
+
+		.css{
+			height: 60%;
+		}
+
+		.js{
+			height: 60%;
+		}
+
+		.php{
+			height: 50%;
+		}
+
+		.sass{
+			height: 60%;
+		}
+	}
+}
+
+.skill-list{
+	margin: 100px auto 150px;
+	overflow: hidden;
+	text-align: center;
+	width: 75%;
+}
+
+.html-item{
+	background-image:url(../img/html-icon.png);
+	background-size: cover;
+}
+
+.css-item{
+	background-image:url(../img/css-icon.png);
+	background-size: cover;
+}
+
+.js-item{
+	background-image:url(../img/js-icon.png);
+	background-size: cover;
+}
+
+.php-item{
+	background-image:url(../img/php-icon.png);
+	background-size: cover;
+}
+
+.sass-item{
+	background-image:url(../img/sass-icon.png);
+	background-size: cover;
+}
+
+.skill-item{
+	@include list-item;
+	height: 150px;
+	margin: 20px 0 0 8%;
+	position: relative;
+	text-align: center;
+	width: 150px;
+}
+
+.hidden-item{
+	@include font-size(32);
+	background-color: rgba(0,0,0,0.8);
+	bottom: 0;
+	color: $font-main-color;
+	height: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	text-transform: uppercase;
+	width: 100%;
+}

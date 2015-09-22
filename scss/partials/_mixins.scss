@@ -1,0 +1,25 @@
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+@mixin positioning{
+	float: left;
+	width: 100%;
+}
+
+@mixin list-item{
+	border: 2px solid #f2f2f2;
+	float: left;
+	height: 150px;
+	list-style: none;
+}
+
+@mixin paragraph{
+	color: #f2f2f2;
+	font-weight: 200;
+	line-height: 40px;
+	margin: 160px auto;
+	text-align: center;
+	width: 50%;
+}
