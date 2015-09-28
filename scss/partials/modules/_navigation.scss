@@ -15,15 +15,15 @@ nav{
     transition: height 1s ease-in-out;
 }
 
-.logo{
+.logo,{
 	float: left;
 	margin: 15px 2%;
 
-	-webkit-transition: width 1s ease-in-out;
-    -moz-transition: width 1s ease-in-out;
-    -ms-transition: width 1s ease-in-out;
-    -o-transition: width 1s ease-in-out;
-    transition: width 1s ease-in-out;
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }
 
 .navbar{
@@ -76,10 +76,21 @@ nav.small{
 	display: inline-block;
 
     .logo{
-	float: left;
-	height: 50px;
-	margin: 15px 2%;
-	width: 125px;
+		float: left;
+		height: 50px;
+		margin: 15px 2%;
+		width: 125px;
+
+		-webkit-transition: all 1s;
+	    -moz-transition: all 1s;
+	    -ms-transition: all 1s;
+	    -o-transition: all 1s;
+	    transition: all 1s;
+
+    	img{
+    		height: auto;
+    		width: 100%
+    	}
 	}
 
 	.navbar{

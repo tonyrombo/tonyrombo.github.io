@@ -1,11 +1,11 @@
-@import url("http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext");
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Unica+One);
 * {
   margin: 0;
   padding: 0; }
 
 html {
-  font-size: 10px;
-  font-family: "Roboto"; }
+  font-size: 10px; }
 
 body {
   background-color: #3A6F93; }
@@ -23,6 +23,7 @@ body {
   font-size: 32px;
   font-size: 3.2rem;
   color: #f2f2f2;
+  font-family: "Unica One", cursive;
   font-weight: 200;
   margin: 200px 0 50px;
   text-align: center;
@@ -46,11 +47,11 @@ nav {
 .logo {
   float: left;
   margin: 15px 2%;
-  -webkit-transition: width 1s ease-in-out;
-  -moz-transition: width 1s ease-in-out;
-  -ms-transition: width 1s ease-in-out;
-  -o-transition: width 1s ease-in-out;
-  transition: width 1s ease-in-out; }
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
 
 .navbar {
   float: right;
@@ -95,7 +96,15 @@ nav.small {
     float: left;
     height: 50px;
     margin: 15px 2%;
-    width: 125px; }
+    width: 125px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+    nav.small .logo img {
+      height: auto;
+      width: 100%; }
   nav.small .navbar {
     float: right;
     margin: 30px 1%;
@@ -135,18 +144,21 @@ header {
   width: 100%; }
 
 .main-title {
-  font-size: 48px;
-  font-size: 4.8rem;
+  font-size: 100px;
+  font-size: 10rem;
   color: #f2f2f2;
-  float: left;
+  font-family: "Unica One", cursive;
   font-weight: 200;
-  margin: 10% 5% 0 10%;
-  text-shadow: 2px 2px 20px #f2f2f2, 2px 2px 20px #F2F2F2;
-  width: 35%; }
+  margin: 10% auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 90%; }
 
 .profile-photo {
   border: 1px solid #f2f2f2;
-  margin: 100px 0 100px 15%;
+  display: block;
+  height: auto;
+  margin: 10px auto 100px;
   width: 25%; }
 
 .my-work {
@@ -209,6 +221,7 @@ header {
   font-size: 2.4rem;
   color: #f2f2f2;
   font-weight: 200;
+  font-family: "Roboto";
   line-height: 40px;
   margin: 160px auto;
   text-align: center;
@@ -291,6 +304,7 @@ header {
   font-size: 2.4rem;
   color: #f2f2f2;
   font-weight: 200;
+  font-family: "Roboto";
   line-height: 40px;
   margin: 160px auto;
   text-align: center;

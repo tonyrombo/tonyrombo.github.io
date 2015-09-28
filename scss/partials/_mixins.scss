@@ -18,6 +18,7 @@
 @mixin paragraph{
 	color: #f2f2f2;
 	font-weight: 200;
+	font-family: $text;
 	line-height: 40px;
 	margin: 160px auto;
 	text-align: center;
