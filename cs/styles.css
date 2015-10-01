@@ -30,32 +30,30 @@ body {
   width: 100%; }
 
 nav {
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
   float: left;
-  height: 150px;
+  height: 75px;
   overflow: hidden;
   position: fixed;
   -moz-position: fixed;
   width: 100%;
-  display: inline-block;
-  -webkit-transition: height 1s ease-in-out;
-  -moz-transition: height 1s ease-in-out;
-  -ms-transition: height 1s ease-in-out;
-  -o-transition: height 1s ease-in-out;
-  transition: height 1s ease-in-out; }
+  display: inline-block; }
 
 .logo {
+  display: inline-block;
   float: left;
-  margin: 15px 2%;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s; }
+  height: 50px;
+  margin: 12px 2% 0;
+  width: 125px; }
+  .logo img {
+    height: 100%;
+    width: 100%; }
 
 .navbar {
   float: right;
-  margin: 50px 1%;
+  margin: 0 1%;
   text-align: center;
   width: 50%; }
 
@@ -83,62 +81,13 @@ nav {
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
 
-nav.small {
-  background-color: rgba(0, 0, 0, 0.5);
-  float: left;
-  height: 75px;
-  overflow: hidden;
-  position: fixed;
-  -moz-position: fixed;
-  width: 100%;
-  display: inline-block; }
-  nav.small .logo {
-    float: left;
-    height: 50px;
-    margin: 15px 2%;
-    width: 125px;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s; }
-    nav.small .logo img {
-      height: auto;
-      width: 100%; }
-  nav.small .navbar {
-    float: right;
-    margin: 30px 1%;
-    text-align: center;
-    width: 50%; }
-  nav.small .navbar-item {
-    float: left;
-    list-style: none;
-    margin: 0 2%;
-    padding-bottom: 5px;
-    text-align: center;
-    width: 15%; }
-    nav.small .navbar-item a {
-      border: none;
-      color: #f2f2f2;
-      font-size: 14px;
-      font-size: 1.4rem;
-      font-family: "Roboto";
-      font-weight: lighter;
-      text-decoration: none;
-      text-transform: capitalize; }
-    nav.small .navbar-item:hover {
-      border-bottom: 2px solid #f2f2f2;
-      -webkit-transition: all 1s ease-in-out;
-      -moz-transition: all 1s ease-in-out;
-      -ms-transition: all 1s ease-in-out;
-      -o-transition: all 1s ease-in-out;
-      transition: all 1s ease-in-out; }
-
 header {
+  align-items: center;
   background-image: url(../img/frailes.jpg);
   background-size: cover;
+  display: flex;
   float: left;
-  height: 100%;
+  height: 100vh;
   padding-top: 150px;
   vertical-align: middle;
   width: 100%; }
@@ -149,17 +98,11 @@ header {
   color: #f2f2f2;
   font-family: "Unica One", cursive;
   font-weight: 200;
-  margin: 10% auto;
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 3px 3px 0 #3A6F93;
   width: 90%; }
-
-.profile-photo {
-  border: 1px solid #f2f2f2;
-  display: block;
-  height: auto;
-  margin: 10px auto 100px;
-  width: 25%; }
 
 .my-work {
   background-color: #3A6F93; }

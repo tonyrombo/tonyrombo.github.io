@@ -1,8 +1,10 @@
 header{
+	align-items: center;
 	background-image: url(../img/frailes.jpg);
 	background-size: cover;
+	display: flex;
 	float: left;
-	height: 100%;
+	height: 100vh;
 	padding-top: 150px;
 	vertical-align: middle;
 	width: 100%;
@@ -14,16 +16,9 @@ header{
     color: #f2f2f2;
     font-family: "Unica One", cursive;
     font-weight: 200;
-    margin: 10% auto;
+    margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
+    text-shadow: 3px 3px 0 #3A6F93;
     width: 90%;
-}
-
-.profile-photo{
-	border: 1px solid #f2f2f2;
-	display: block;
-	height: auto;
-	margin: 10px auto 100px;
-	width: 25%;
 }
