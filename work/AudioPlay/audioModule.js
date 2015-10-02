@@ -11,7 +11,7 @@
 	var muting = false;
 
 	var playlist = new Array();
-	playlist[0] = {src:'/AudioPlay/audio/1.mp3', name:'Star Wars Theme', img:'img/starwars.jpeg'};
+	playlist[0] = {src:'AudioPlay/audio/1.mp3', name:'Star Wars Theme', img:'img/starwars.jpeg'};
 	playlist[1] = {src:'/AudioPlay/audio/2.mp3', name:'Instant Crush - Daft Punk', img:'img/daftpunk.png'};
 	playlist[2] = {src:'/AudioPlay/audio/3.mp3', name:'Burning Man - Patterns', img:'img/costarica.jpg'};
 	// playlist[3] = {src:'/AudioPlay/audio/4.mp3', name:'Paint it black - The Rolling Stones', img:'img/rollingstones.jpeg'};
