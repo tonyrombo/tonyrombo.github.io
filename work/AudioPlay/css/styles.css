@@ -99,9 +99,9 @@ body{
 
 .cover{
 	border-radius: 50%;
-	height: 400px;
-	margin: 10% 15% 0;
-	width: 40%;
+    height: auto;
+    margin: 1% 15% 0px;
+    width: 40%;
 }
 
 .song-name{
