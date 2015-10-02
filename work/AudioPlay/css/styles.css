@@ -50,7 +50,7 @@ body{
 .playlist-container{
 	background-color: #050505;
 	float: left;
-	height: 650px;
+	height: 500px;
 	overflow: scroll;
 	width: 25%;
 }
