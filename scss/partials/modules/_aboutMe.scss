@@ -6,3 +6,9 @@
 	@include font-size(24);
 	@include paragraph;
 }
+
+.profile-photo{
+	display: block;
+	margin: 0 auto;
+	width: 30%;
+}

@@ -1,7 +1,5 @@
 nav{
-	align-items: center;
-	background-color: rgba(0,0,0,0.5);
-	display: flex;
+	background-color: rgba(0,0,0,0.3);
 	float: left;
 	height: 75px;
 	overflow: hidden;
@@ -26,8 +24,7 @@ nav{
 
 .navbar{
 	float: right;
-	margin: 0 1%;
-	text-align: center;
+	margin: 25px 1%;
 	width: 50%;
 }
 
@@ -43,7 +40,7 @@ nav{
 		border: none;
 		color: $font-main-color;
 		@include font-size(16);
-		font-family: "Roboto";
+		font-family: $text;
 		font-weight: lighter;
 		text-decoration: none;
 		text-transform: capitalize;

@@ -8,7 +8,8 @@ html {
   font-size: 10px; }
 
 body {
-  background-color: #3A6F93; }
+  background-color: #3A6F93;
+  font-family: "Roboto"; }
 
 .wrapper {
   float: left;
@@ -30,9 +31,7 @@ body {
   width: 100%; }
 
 nav {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
   float: left;
   height: 75px;
   overflow: hidden;
@@ -53,8 +52,7 @@ nav {
 
 .navbar {
   float: right;
-  margin: 0 1%;
-  text-align: center;
+  margin: 25px 1%;
   width: 50%; }
 
 .navbar-item {
@@ -169,6 +167,11 @@ header {
   margin: 160px auto;
   text-align: center;
   width: 50%; }
+
+.profile-photo {
+  display: block;
+  margin: 0 auto;
+  width: 30%; }
 
 .skills {
   background-color: #3A6F93; }
