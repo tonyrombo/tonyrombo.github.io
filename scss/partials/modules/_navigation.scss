@@ -1,12 +1,13 @@
-nav{
+.nav{
 	background-color: rgba(0,0,0,0.3);
+	display: inline-block;
 	float: left;
 	height: 75px;
-	overflow: hidden;
 	position: fixed;
 	-moz-position: fixed;
+	-webkit-position: fixed;
+	position: fixed;
 	width: 100%;
-	display: inline-block;
 }
 
 .logo,{
@@ -25,16 +26,29 @@ nav{
 .navbar{
 	float: left;
     margin: 25px 1%;
-    width: 60%;
+    width: 600px;
+
+    @media screen and (max-width: 1000px){
+		background-color: #4d7d9e;
+		box-sizing: border-box;
+		float: right;
+		margin: 0;
+		padding: 75px 0px 0 0;
+		width: 80%;
+		height: 445px;
+		position: absolute;
+		top: 75px;
+		right: 0px;
+    }
 }
 
 .navbar-item{
 	float: left;
 	list-style: none;
-	margin: 0 1%;
+	margin: 0 10px;
 	padding-bottom: 5px;
 	text-align: center;
-	width: 18%;
+	width: 100px;
 
 	a{
 		border: none;
@@ -55,4 +69,13 @@ nav{
 		-o-transition: all 1s ease-in-out;
 		transition: all 1s ease-in-out;
 	}
+
+	@media screen and (max-width: 1000px){
+		float: none;
+		margin: 0;
+		box-sizing: border-box;
+		padding: 20px 0px;
+		border-bottom: 3px solid #47505A;
+		width: 100%;
+    }
 }

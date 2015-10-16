@@ -1,23 +1,41 @@
-header{
+.header{
 	align-items: center;
 	background-image: url(../img/frailes.jpg);
 	background-size: cover;
 	display: flex;
 	float: left;
-	height: 100vh;
 	vertical-align: middle;
 	width: 100%;
 }
 
 .main-title{
-	font-size: 100px;
-    font-size: 10rem;
+	@include font-size(100);
     color: #f2f2f2;
-    font-family: $title;
-    font-weight: 200;
-    margin: 0 auto;
+    font-family: $header-title;
+    font-weight: 400;
+    line-height: 150px;
+    line-height: 15rem;
+    margin: 125px auto;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 3px 3px 0 #3A6F93;
     width: 90%;
+
+    @media screen and (max-width: 1280px) {
+    	@include font-size(60);
+    	line-height: 90px;
+    	line-height: 9rem;
+    }
+
+    @media screen and (max-width: 679px) {
+        @include font-size(48);
+        line-height: 72px;
+        line-height: 7.2rem;
+    }
+
+    @media screen and (max-width: 479px) {
+        @include font-size(42);
+        line-height: 63px;
+        line-height: 6.3rem;
+    }
 }

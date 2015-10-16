@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Unica+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,100italic,300);
 * {
   margin: 0;
   padding: 0; }
@@ -27,21 +27,23 @@ a {
   font-size: 48px;
   font-size: 4.8rem;
   color: #f2f2f2;
-  font-family: "Unica One", cursive;
+  font-family: "Josefin Slab", cursive;
   font-weight: 200;
   margin: 200px 0 50px;
   text-align: center;
+  text-transform: capitalize;
   width: 100%; }
 
-nav {
+.nav {
   background-color: rgba(0, 0, 0, 0.3);
+  display: inline-block;
   float: left;
   height: 75px;
-  overflow: hidden;
   position: fixed;
   -moz-position: fixed;
-  width: 100%;
-  display: inline-block; }
+  -webkit-position: fixed;
+  position: fixed;
+  width: 100%; }
 
 .logo {
   display: inline-block;
@@ -56,15 +58,27 @@ nav {
 .navbar {
   float: left;
   margin: 25px 1%;
-  width: 60%; }
+  width: 600px; }
+  @media screen and (max-width: 1000px) {
+    .navbar {
+      background-color: #4d7d9e;
+      box-sizing: border-box;
+      float: right;
+      margin: 0;
+      padding: 75px 0px 0 0;
+      width: 80%;
+      height: 445px;
+      position: absolute;
+      top: 75px;
+      right: 0px; } }
 
 .navbar-item {
   float: left;
   list-style: none;
-  margin: 0 1%;
+  margin: 0 10px;
   padding-bottom: 5px;
   text-align: center;
-  width: 18%; }
+  width: 100px; }
   .navbar-item a {
     border: none;
     color: #f2f2f2;
@@ -81,14 +95,21 @@ nav {
     -ms-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
+  @media screen and (max-width: 1000px) {
+    .navbar-item {
+      float: none;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 20px 0px;
+      border-bottom: 3px solid #47505A;
+      width: 100%; } }
 
-header {
+.header {
   align-items: center;
   background-image: url(../img/frailes.jpg);
   background-size: cover;
   display: flex;
   float: left;
-  height: 100vh;
   vertical-align: middle;
   width: 100%; }
 
@@ -96,13 +117,33 @@ header {
   font-size: 100px;
   font-size: 10rem;
   color: #f2f2f2;
-  font-family: "Unica One", cursive;
-  font-weight: 200;
-  margin: 0 auto;
+  font-family: "Josefin Slab";
+  font-weight: 400;
+  line-height: 150px;
+  line-height: 15rem;
+  margin: 125px auto;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 3px 3px 0 #3A6F93;
   width: 90%; }
+  @media screen and (max-width: 1280px) {
+    .main-title {
+      font-size: 60px;
+      font-size: 6rem;
+      line-height: 90px;
+      line-height: 9rem; } }
+  @media screen and (max-width: 679px) {
+    .main-title {
+      font-size: 48px;
+      font-size: 4.8rem;
+      line-height: 72px;
+      line-height: 7.2rem; } }
+  @media screen and (max-width: 479px) {
+    .main-title {
+      font-size: 42px;
+      font-size: 4.2rem;
+      line-height: 63px;
+      line-height: 6.3rem; } }
 
 .my-work {
   background-color: #3A6F93; }
@@ -119,13 +160,25 @@ header {
   float: left;
   list-style: none;
   background-size: cover;
-  margin: 20px 1%;
+  height: 250px;
+  margin: 3px .5%;
   overflow: hidden;
-  width: 23%; }
+  width: 32%; }
   .work-item:hover .work-info {
     display: inline-block;
     height: 100%;
     width: 100%; }
+  @media screen and (max-width: 979px) {
+    .work-item {
+      width: 49%; } }
+  @media screen and (max-width: 639px) {
+    .work-item {
+      height: 300px;
+      margin: 3px 0;
+      width: 100%; } }
+  @media screen and (max-width: 479px) {
+    .work-item {
+      height: 250px; } }
 
 .work-info {
   background-color: rgba(0, 0, 0, 0.8);
@@ -149,6 +202,24 @@ header {
     transition: width 1s linear;
     width: 60%; }
 
+.item-1 {
+  background-image: url(../img/weatherApp.png); }
+
+.item-2 {
+  background-image: url(../img/toDo.png); }
+
+.item-3 {
+  background-image: url(../img/iluminada.png); }
+
+.item-4 {
+  background-image: url(../img/techBlog.png); }
+
+.item-5 {
+  background-image: url(../img/audioPlay.png); }
+
+.item-6 {
+  background-image: url(../img/auditorio.png); }
+
 .about {
   background-color: #1BA39C; }
 
@@ -159,14 +230,28 @@ header {
   font-weight: 200;
   font-family: "Roboto";
   line-height: 40px;
-  margin: 100px auto 160px;
   text-align: center;
-  width: 50%; }
+  width: 50%;
+  margin: 50px auto 100px; }
+  @media screen and (max-width: 1023px) {
+    .about-me {
+      font-size: 28px;
+      font-size: 2.8rem;
+      width: 90%; } }
 
 .profile-photo {
   display: block;
   margin: 0 auto;
   width: 20%; }
+  @media screen and (max-width: 1023px) {
+    .profile-photo {
+      width: 30%; } }
+  @media screen and (max-width: 619px) {
+    .profile-photo {
+      width: 35%; } }
+  @media screen and (max-width: 480px) {
+    .profile-photo {
+      width: 40%; } }
 
 .skill-list {
   color: #f2f2f2;
@@ -181,10 +266,14 @@ header {
   font-size: 18px;
   font-size: 1.8rem;
   float: left;
+  font-weight: 100;
   list-style: none;
   padding: 25px 0;
-  margin: 15px 1%;
-  width: 31%; }
+  margin: 3px .5%;
+  width: 32%; }
+  @media screen and (max-width: 479px) {
+    .skill-item {
+      width: 49%; } }
 
 .motivation-quote {
   background-color: #1BA39C; }
@@ -196,9 +285,14 @@ header {
   font-weight: 200;
   font-family: "Roboto";
   line-height: 40px;
-  margin: 100px auto 160px;
   text-align: center;
-  width: 50%; }
+  width: 50%;
+  margin: 150px auto 100px; }
+  @media screen and (max-width: 1023px) {
+    .quote {
+      font-size: 28px;
+      font-size: 2.8rem;
+      width: 90%; } }
 
 .contact {
   background-color: #3A6F93; }
@@ -214,24 +308,35 @@ header {
   font-size: 1.8rem;
   float: left;
   list-style: none;
-  margin: 15px 1%;
+  height: 250px;
+  margin: 15px .5%;
   overflow: hidden;
-  padding: 25px 2%;
+  padding: 10px .5%;
   text-align: center;
-  width: 27%; }
+  width: 31%; }
   .contact-item img {
     display: inline-block;
     height: auto;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 30%; }
   .contact-item a, .contact-item address {
+    font-size: 18px;
+    font-size: 1.8rem;
     color: #f2f2f2;
     display: inline-block;
-    float: left;
-    margin: 20px 1%;
+    font-weight: 100;
+    margin: 20px auto;
     text-align: center;
     text-decoration: none;
-    width: 100%; }
+    width: 90%; }
+    @media screen and (max-width: 679px) {
+      .contact-item a, .contact-item address {
+        font-size: 24px;
+        font-size: 2.4rem; } }
+  @media screen and (max-width: 679px) {
+    .contact-item {
+      height: 300px;
+      width: 99%; } }
 
 footer {
   float: left;

@@ -13,26 +13,37 @@
     @include font-size(18);
     float: left;
     list-style: none;
-    margin: 15px 1%;
+    height: 250px;
+    margin: 15px .5%;
     overflow: hidden;
-    padding: 25px 2%;
+    padding: 10px .5%;
     text-align: center;
-    width: 27%;
+    width: 31%;
 
     img{
     	display: inline-block;
     	height: auto;
-    	margin: 0 auto;
+    	margin: 20px auto;
     	width: 30%;
     }
 
     a, address{
+        @include font-size(18);
     	color: $font-main-color;
     	display: inline-block;
-    	float: left;
-    	margin: 20px 1%;
+        font-weight: 100;
+    	margin: 20px auto;
     	text-align: center;
     	text-decoration: none;
-    	width: 100%;
+    	width: 90%;
+
+        @media screen and (max-width: 679px){
+            @include font-size(24);
+        }
+    }
+
+    @media screen and (max-width: 679px) {
+        height: 300px;
+        width: 99%;
     }
 }

@@ -5,10 +5,28 @@
 .about-me{
 	@include font-size(24);
 	@include paragraph;
+	margin: 50px auto 100px;
+
+	@media screen and (max-width: 1023px) {
+		@include font-size(28);
+		width: 90%;
+	}
 }
 
 .profile-photo{
 	display: block;
 	margin: 0 auto;
 	width: 20%;
+
+	@media screen and (max-width: 1023px) {
+		width: 30%
+	}
+
+	@media screen and (max-width: 619px) {
+		width: 35%
+	}
+
+	@media screen and (max-width: 480px) {
+		width: 40%
+	}
 }

@@ -11,10 +11,11 @@
 
 .work-item{
 	@include list-item;
-	background-size: cover;
-    margin: 20px 1%;
+    background-size: cover;
+    height: 250px;
+    margin: 3px .5%;
     overflow: hidden;
-    width: 23%;
+    width: 32%;
 
 	&:hover{
 		.work-info{
@@ -22,6 +23,20 @@
 			height: 100%;
 			width: 100%;
 		}
+	}
+
+	@media screen and (max-width: 979px) {
+		width: 49%;
+	}
+
+	@media screen and (max-width: 639px) {
+		height: 300px;
+		margin: 3px 0;
+		width: 100%;
+	}
+
+	@media screen and (max-width: 479px) {
+		height: 250px;
 	}
 
 }
@@ -54,26 +69,26 @@
 	}
 }
 
-// .item-1{
-// 	background-image: url(../img/weatherApp.png);
-// }
+.item-1{
+	background-image: url(../img/weatherApp.png);
+}
 
-// .item-2{
-// 	background-image: url(../img/toDo.png);
-// }
+.item-2{
+	background-image: url(../img/toDo.png);
+}
 
-// .item-3{
-// 	background-image: url(../img/iluminada.png);
-// }
+.item-3{
+	background-image: url(../img/iluminada.png);
+}
 
-// .item-4{
-// 	background-image: url(../img/techBlog.png);
-// }
+.item-4{
+	background-image: url(../img/techBlog.png);
+}
 
-// .item-5{
-// 	background-image: url(../img/audioPlay.png);
-// }
+.item-5{
+	background-image: url(../img/audioPlay.png);
+}
 
-// .item-6{
-// 	background-image: url(../img/auditorio.png);
-// }
+.item-6{
+	background-image: url(../img/auditorio.png);
+}
