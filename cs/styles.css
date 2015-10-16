@@ -11,6 +11,9 @@ body {
   background-color: #3A6F93;
   font-family: "Roboto"; }
 
+a {
+  text-decoration: none; }
+
 .wrapper {
   float: left;
   width: 100%; }
@@ -112,46 +115,39 @@ header {
 
 .work-item {
   border: 2px solid #f2f2f2;
+  box-sizing: border-box;
   float: left;
-  height: 150px;
   list-style: none;
-  margin: 20px;
-  width: 150px; }
+  background-size: cover;
+  margin: 20px 1%;
+  overflow: hidden;
+  width: 23%; }
   .work-item:hover .work-info {
-    display: inline-block; }
+    display: inline-block;
+    height: 100%;
+    width: 100%; }
 
 .work-info {
   background-color: rgba(0, 0, 0, 0.8);
-  height: 100%;
-  width: 100%;
-  display: none; }
+  height: 0;
+  overflow: hidden;
+  transition: height .35s linear;
+  width: 0; }
   .work-info h1 {
     color: #f2f2f2;
     font-weight: 200;
-    margin: 10px 0 30px 0; }
-  .work-info p {
+    margin: 30px 0;
+    transition: width 1s linear; }
+  .work-info .work-btn {
+    background-color: rgba(58, 111, 147, 0.6);
+    border: none;
+    display: inline-block;
     color: #f2f2f2;
-    font-size: 12px;
-    font-size: 1.2rem;
-    font-weight: 200; }
-
-.item-1 {
-  background-image: url(../img/weatherApp.png); }
-
-.item-2 {
-  background-image: url(../img/toDo.png); }
-
-.item-3 {
-  background-image: url(../img/iluminada.png); }
-
-.item-4 {
-  background-image: url(../img/techBlog.png); }
-
-.item-5 {
-  background-image: url(../img/audioPlay.png); }
-
-.item-6 {
-  background-image: url(../img/auditorio.png); }
+    font-size: 18px;
+    margin: 35px auto;
+    padding: 10px 1%;
+    transition: width 1s linear;
+    width: 60%; }
 
 .about {
   background-color: #1BA39C; }
@@ -163,14 +159,14 @@ header {
   font-weight: 200;
   font-family: "Roboto";
   line-height: 40px;
-  margin: 160px auto;
+  margin: 100px auto 160px;
   text-align: center;
   width: 50%; }
 
 .profile-photo {
   display: block;
   margin: 0 auto;
-  width: 30%; }
+  width: 20%; }
 
 .skill-list {
   color: #f2f2f2;
@@ -200,7 +196,7 @@ header {
   font-weight: 200;
   font-family: "Roboto";
   line-height: 40px;
-  margin: 160px auto;
+  margin: 100px auto 160px;
   text-align: center;
   width: 50%; }
 

@@ -11,6 +11,10 @@ body{
 	font-family: $text;
 }
 
+a{
+	text-decoration: none;
+}
+
 .wrapper{
 	@include positioning;
 }

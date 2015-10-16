@@ -10,8 +10,8 @@
 
 @mixin list-item{
 	border: 2px solid #f2f2f2;
+	box-sizing: border-box;
 	float: left;
-	height: 150px;
 	list-style: none;
 }
 
@@ -20,7 +20,7 @@
 	font-weight: 200;
 	font-family: $text;
 	line-height: 40px;
-	margin: 160px auto;
+	margin: 100px auto 160px;
 	text-align: center;
 	width: 50%;
 }
