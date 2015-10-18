@@ -29,17 +29,45 @@
     width: 600px;
 
     @media screen and (max-width: 1000px){
-		background-color: #4d7d9e;
+		background-color: rgba(29, 56, 74, .95);
 		box-sizing: border-box;
 		float: right;
 		margin: 0;
 		padding: 75px 0px 0 0;
-		width: 80%;
-		height: 445px;
+		width: 0;
+		height: 436px;
 		position: absolute;
 		top: 75px;
+		transition: width .5s linear; 
 		right: 0px;
     }
+}
+
+.show-menu-check{
+	display: none;
+
+	&:checked + .navbar{
+		width: 80%;
+	}
+}
+
+.show-menu-icon{
+	display: none;
+
+	@media screen and (max-width: 1000px){
+		color: #f2f2f2;
+		display: inline-block;
+		float: right;
+		font-family: "Josefin Slab";
+		font-size: 24px;
+		font-weight: bold;
+		letter-spacing: 6px;
+		height: 40px;
+		margin: 15px 2%;
+		padding: 5px;
+		text-align: center;
+	    width: 100px;
+	}
 }
 
 .navbar-item{
@@ -58,6 +86,10 @@
 		font-weight: lighter;
 		text-decoration: none;
 		text-transform: capitalize;
+
+		@media screen and (max-width: 1000px){
+			@include font-size(24);
+		}
 	}
 
 	&:hover{
