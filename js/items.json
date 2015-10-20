@@ -1,0 +1,37 @@
+{
+    "item-1":{
+        "name": "Weather App",
+        "button": "Ver Proyecto",
+        "desc": "Proyecto hecho en el cuarto cuatrimestre en el curso de javascript en el CETAV. El reto presentado fue utilizar una API para obtener informacion climática de las ciudades del mundo."
+    },
+
+    "item-1":{
+        "name": "To Do App",
+        "button": "Ver Proyecto",
+        "desc": "Proyecto hecho para el curso de javascript en el cuarto cuatrimestre en el CETAV. El ejercicio consistió en realizar una aplicación web en la cual insertar tareas y ademas obtener el numero total de tareas, pendientes y hechas."
+    },
+
+    "item-1":{
+        "name": "La Iluminada",
+        "button": "Ver en Github",
+        "desc": "Ejercicio hecho durante el tercer cuatrimestre en el CETAV, para el curso de Diseño de Sitios Web II, utilizando elementos de HTML5."
+    },
+
+    "item-1":{
+        "name": "Twish",
+        "button": "Ver Proyecto",
+        "desc": "Proyecto hecho en el cuarto cuatrimestre en el curso de javascript en el CETAV. El reto presentado fue utilizar una API para obtener informacion climática de las ciudades del mundo."
+    },
+
+    "item-1":{
+        "name": "Audio Player",
+        "button": "Ver Proyecto",
+        "desc": "Proyecto hecho en el cuarto cuatrimestre en el curso de javascript en el CETAV. El reto presentado fue utilizar una API para obtener informacion climática de las ciudades del mundo."
+    },
+
+    "item-1":{
+        "name": "Auditorio Alfredo Krauss",
+        "button": "Ver Proyecto",
+        "desc": "Proyecto hecho en el cuarto cuatrimestre en el curso de javascript en el CETAV. El reto presentado fue utilizar una API para obtener informacion climática de las ciudades del mundo."
+    }
+}
