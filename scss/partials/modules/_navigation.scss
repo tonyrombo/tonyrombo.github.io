@@ -29,26 +29,22 @@
     width: 750px;
 
     @media screen and (max-width: 1000px){
-		background-color: rgba(29, 56, 74, .95);
+		background-color: rgba(29, 56, 74, 0.95);
 		box-sizing: border-box;
 		float: right;
-		margin: 0;
-		padding: 75px 0px 0 0;
-		width: 0;
-		height: 436px;
+		margin: 0px;
+		width: 0px;
+		height: 250px;
 		position: absolute;
 		top: 75px;
-		transition: width .5s linear; 
+		transition: width 0.5s linear 0s;
 		right: 0px;
+		padding: 0px;
     }
 }
 
-.show-menu-check{
-	display: none;
-
-	&:checked + .navbar{
-		width: 80%;
-	}
+.expanded{
+	width: 80%;
 }
 
 .show-menu-icon{
@@ -62,11 +58,14 @@
 		font-size: 24px;
 		font-weight: bold;
 		letter-spacing: 6px;
-		height: 40px;
+		height: 22px;
 		margin: 15px 2%;
 		padding: 5px;
 		text-align: center;
-	    width: 100px;
+		width: 100px;
+		border-right: 3px solid #c6c6c6;
+		border-bottom: 3px solid #c6c6c6;
+		border-radius: 5px;
 	}
 }
 
@@ -104,9 +103,9 @@
 
 	@media screen and (max-width: 1000px){
 		float: none;
-		margin: 0;
+		margin: 0px;
 		box-sizing: border-box;
-		padding: 20px 0px;
+		padding: 10px 0px;
 		border-bottom: 3px solid #47505A;
 		width: 100%;
     }
