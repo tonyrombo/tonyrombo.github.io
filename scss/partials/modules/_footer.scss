@@ -5,16 +5,27 @@ footer{
 }
 
 .social{
-	margin: 30px auto;
+	margin: 30px auto 0;
 	overflow: hidden;
 	text-align: center;
-	width: 85%
+	width: 85%;
 }
 
 .social-item{
 	float: left;
 	list-style: none;
-	width: 33%;
+    margin: 0 13.6%;
+    width: 6%;
+    
+    svg{
+        height: 100%;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1000px){
+        margin: 0 9%;
+        width: 15%;
+    }
 }
 
 .pinterest-icon path{
