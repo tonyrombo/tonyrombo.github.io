@@ -1,0 +1,70 @@
+.project-wrapper{
+	margin: 150px auto 0;
+	overflow: hidden;
+	padding: 50px 0;
+	width: 85%;
+}
+
+.img-wrapper{
+	float: left;
+	height: 800px;
+	overflow: scroll;
+	width: 50%;
+
+	img{
+		width: 100%;
+	}
+
+	@media screen and (max-width: 1023px){
+		float: none;
+		height: auto;
+		margin: 0 auto 30px;
+		overflow: hidden;
+		width: 100%;
+	}
+}
+
+.project-overview{
+	float: right;
+	overflow: hidden;
+	width: 40%;
+
+	@media screen and (max-width: 1023px){
+		float: none;
+		width: 100%;
+	}
+}
+
+.project-title{
+	@include font-size(48);
+	color: $font-main-color;
+	font-family: "Josefin Slab";
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.project-summary{
+	@include font-size(18);
+	color: $font-main-color;
+	float: left;
+	font-family: $text;
+	font-weight: 200;
+	line-height: 40px;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.cta{
+	@include font-size(18);
+	background-color: darken($section-color-2, 15%);
+	box-sizing: border-box;
+	color: $font-main-color;
+	display: inline-block;
+	transition: all .25s linear;
+	padding: 20px 5%;
+
+	&:hover{
+		background-color: transparent;
+		border: 2px solid darken($section-color-2, 15%);
+	}
+}
