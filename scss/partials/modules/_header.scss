@@ -1,11 +1,13 @@
 .header{
 	align-items: center;
+    background-attachment: fixed;
 	background-image: url(../img/frailes.jpg);
 	background-size: cover;
 	display: flex;
 	float: left;
 	vertical-align: middle;
 	width: 100%;
+    z-index: 11;
 }
 
 .main-title{

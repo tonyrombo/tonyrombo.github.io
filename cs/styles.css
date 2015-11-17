@@ -36,14 +36,21 @@ a {
 
 .nav {
   background-color: rgba(0, 0, 0, 0.3);
-  display: inline-block;
   float: left;
   height: 75px;
   position: fixed;
   -moz-position: fixed;
   -webkit-position: fixed;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  z-index: 15; }
+  .nav:hover {
+    background-color: #336181; }
 
 .logo {
   display: inline-block;
@@ -97,13 +104,19 @@ a {
       border-radius: 5px; } }
 
 .navbar-item {
+  background-color: transparent;
   float: left;
   list-style: none;
   height: 50px;
   margin: 0;
   padding-top: 25px;
   text-align: center;
-  width: 150px; }
+  width: 150px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
   .navbar-item a {
     border: none;
     color: #f2f2f2;
@@ -118,12 +131,7 @@ a {
         font-size: 24px;
         font-size: 2.4rem; } }
   .navbar-item:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out; }
+    background-color: rgba(0, 0, 0, 0.2); }
   @media screen and (max-width: 1000px) {
     .navbar-item {
       float: none;
@@ -135,12 +143,14 @@ a {
 
 .header {
   align-items: center;
+  background-attachment: fixed;
   background-image: url(../img/frailes.jpg);
   background-size: cover;
   display: flex;
   float: left;
   vertical-align: middle;
-  width: 100%; }
+  width: 100%;
+  z-index: 11; }
 
 .main-title {
   font-size: 100px;
@@ -232,13 +242,13 @@ a {
   background-image: url(../img/projects-img/gamejam-logo.png); }
 
 .item-2 {
-  background-image: url(../img/toDo.png); }
+  background-image: url(../img/projects-img/iluminada-logo.png); }
 
 .item-3 {
-  background-image: url(../img/iluminada.png); }
+  background-image: url(../img/projects-img/audioplay-logo.png); }
 
 .item-4 {
-  background-image: url(../img/twish.png); }
+  background-image: url(../img/projects-img/auditorio-logo.png); }
 
 .item-5 {
   background-image: url(../img/audioPlay.png); }
@@ -435,8 +445,10 @@ footer {
 .img-wrapper {
   float: left;
   height: 800px;
-  overflow: scroll;
+  overflow-y: scroll;
   width: 50%; }
+  .img-wrapper::-webkit-scrollbar {
+    display: none; }
   .img-wrapper img {
     width: 100%; }
   @media screen and (max-width: 1023px) {

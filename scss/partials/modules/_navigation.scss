@@ -1,6 +1,5 @@
 .nav{
 	background-color: rgba(0,0,0,0.3);
-	display: inline-block;
 	float: left;
 	height: 75px;
 	position: fixed;
@@ -8,6 +7,16 @@
 	-webkit-position: fixed;
 	position: fixed;
 	width: 100%;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	z-index: 15;
+
+	&:hover{
+    	background-color: darken($section-color-2, 5%);
+    }
 }
 
 .logo,{
@@ -70,6 +79,7 @@
 }
 
 .navbar-item{
+	background-color: transparent;
 	float: left;
 	list-style: none;
 	height: 50px;
@@ -77,6 +87,11 @@
 	padding-top: 25px;
 	text-align: center;
 	width: 150px;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
 
 	a{
 		border: none;
@@ -93,12 +108,7 @@
 	}
 
 	&:hover{
-		background-color: rgba(0,0,0,.2); 
-		-webkit-transition: all 1s ease-in-out;
-		-moz-transition: all 1s ease-in-out;
-		-ms-transition: all 1s ease-in-out;
-		-o-transition: all 1s ease-in-out;
-		transition: all 1s ease-in-out;
+		background-color: rgba(0,0,0,.2);
 	}
 
 	@media screen and (max-width: 1000px){

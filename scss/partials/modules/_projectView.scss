@@ -8,8 +8,12 @@
 .img-wrapper{
 	float: left;
 	height: 800px;
-	overflow: scroll;
+	overflow-y: scroll;
 	width: 50%;
+
+	&::-webkit-scrollbar{
+		display: none;
+	}
 
 	img{
 		width: 100%;
