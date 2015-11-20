@@ -9,8 +9,17 @@ $(document).ready(function(){
 	};
 
 	if(windowWidth < 1000){
-		$("#show-menu, .navbar-item").click(function(){
+		$("#show-menu, .navbar-item, .navbar-item a").click(function(){
 			$(".navbar").toggleClass("expanded");
 		});
 	}
+
+	$(function() {
+	  $(".navbar-item a, .logo").click(function() {
+            $("html, body").stop().animate({
+                scrollTop: $($(this).attr("href")).offset().top - 0
+            }, 1500);
+            return false;
+        });
+	});
 });
