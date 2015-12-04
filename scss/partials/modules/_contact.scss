@@ -13,10 +13,9 @@
     @include font-size(18);
     float: left;
     list-style: none;
-    height: 250px;
     margin: 15px .5%;
     overflow: hidden;
-    padding: 10px .5%;
+    padding: 30px .5%;
     text-align: center;
     width: 31%;
 
@@ -44,7 +43,6 @@
     }
 
     @media screen and (max-width: 679px) {
-        height: 300px;
         width: 99%;
     }
 }
