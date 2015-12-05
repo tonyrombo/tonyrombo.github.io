@@ -220,10 +220,16 @@ a {
   box-sizing: border-box;
   float: left;
   list-style: none;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: none;
   height: 250px;
   margin: 3px .5%;
   overflow: hidden;
+  transition: width .5s linear;
+  -webkit-transition: width .5s linear;
+  -moz-transition: width .5s linear;
+  -o-transition: width .5s linear;
+  -ms-transition: width .5s linear;
   width: 32%; }
   .work-item:hover .work-info {
     height: 100%; }
@@ -252,10 +258,10 @@ a {
   background-image: url(../img/projects-img/auditorio-logo.png); }
 
 .item-5 {
-  background-image: url(../img/audioPlay.png); }
+  background-image: url(../img/projects-img/our-heritage.png); }
 
 .item-6 {
-  background-image: url(../img/auditorio.png); }
+  background-image: url(../img/projects-img/twish.png); }
 
 .about {
   background-color: #1BA39C; }
@@ -442,9 +448,9 @@ footer {
   width: 85%; }
 
 .img-wrapper {
+  border: 2px solid #f2f2f2;
   float: left;
-  height: 800px;
-  overflow-y: scroll;
+  padding: 0;
   width: 50%; }
   .img-wrapper::-webkit-scrollbar {
     display: none; }

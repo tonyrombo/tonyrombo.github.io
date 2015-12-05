@@ -40,10 +40,16 @@
 
 .work-item{
 	@include list-item;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: none;
     height: 250px;
     margin: 3px .5%;
     overflow: hidden;
+    transition: width .5s linear;
+    -webkit-transition: width .5s linear;
+    -moz-transition: width .5s linear;
+    -o-transition: width .5s linear;
+    -ms-transition: width .5s linear;
     width: 32%;
 
 	&:hover{
@@ -85,9 +91,9 @@
 }
 
 .item-5{
-	background-image: url(../img/audioPlay.png);
+	background-image: url(../img/projects-img/our-heritage.png);
 }
 
 .item-6{
-	background-image: url(../img/auditorio.png);
+	background-image: url(../img/projects-img/twish.png);
 }
