@@ -296,6 +296,19 @@ a {
     .profile-photo {
       width: 40%; } }
 
+.resume-link {
+  font-size: 18px;
+  font-size: 1.8rem;
+  background-color: #3A6F93;
+  color: #f2f2f2;
+  font-family: "Roboto";
+  font-weight: 200;
+  display: block;
+  margin: 50px auto;
+  padding: 15px;
+  text-align: center;
+  width: 30%; }
+
 .skill-list {
   color: #f2f2f2;
   margin: 0 auto 50px;
